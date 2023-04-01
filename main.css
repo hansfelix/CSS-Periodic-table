@@ -1,7 +1,8 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* Using table  */
 .table {
   width: 100%;
   table-layout: fixed;
@@ -12,6 +13,7 @@
   height: 30px;
 }
 
+/* Using float  */
 .f-row {
   height: 40px;
 }
@@ -25,4 +27,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Using flex */
+.fx-row {
+  height: 40px;
+  display: flex;
+}
+
+.fx-cell {
+  flex: 1;
+  border: 1px solid red;
+}
+
+/* Using grid */
+.g-grid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: 40px 40px;
+}
+
+.g-cell {
+  border: 1px solid blue;
+}
+
+.is-16{
+    grid-column: 2/18;
+}
+
+.is-13{
+    grid-column: 3/13;
 }
