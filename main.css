@@ -1,9 +1,28 @@
-.table {
-    width: 100%;
-    table-layout: fixed;
+* {
+    box-sizing: border-box;
 }
 
-.table td{
-    border: 1px solid black;
-    height: 30px;
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table td {
+  border: 1px solid black;
+  height: 30px;
+}
+
+.f-row {
+  height: 40px;
+}
+
+.f-cell {
+  float: left;
+  width: 5.555%;
+  height: 100%;
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
